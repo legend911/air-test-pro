@@ -4,6 +4,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/custom-header.css" rel="stylesheet" />
     <link href="css/text.css" rel="stylesheet" />
+    <link href="css/image.css" rel="stylesheet" />
     <title>Air Test Pro</title>
 </head>
 <body>
@@ -42,23 +43,23 @@
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <img alt="First slide" src="img/slider/slider_IMG_3871.jpg">
-                <div class="carousel-caption">
-                    <h3 id="sliderHeader">Dwight Norris</h3>
-                    <p>Owner of Air Test Pro</p>
+                <img alt="First slide" src="img/slider/IMG_3866.jpg">
+                <div class="carousel-caption imgSize">
+                    <h3 id="sliderHeader">IQAir Purifier Professional</h3>
+                    <p>Baby's Room</p>
                 </div>
             </div>
             <div class="item">
-                <img alt="Second slide" src="img/slider/slider_IMG_3881.jpg">
-                <div class="carousel-caption">
-                    <h3 id="sliderHeader">Air Filter</h3>
-                    <p>Used Air Filter</p>
+                <img alt="Second slide" src="img/slider/IMG_3863.jpg">
+                <div class="carousel-caption imgSize">
+                    <h3 id="sliderHeader">Honeywell 50250</h3>
+                    <p>Air purifier in the bedroom</p>
                 </div>
             </div>
             <div class="item">
-                <img alt="Third slide" src="img/slider/slider_IMG_3875.jpg">
-                <div class="carousel-caption">
-                    <h3 id="sliderHeader">Air Purifier</h3>
+                <img alt="Third slide" src="img/slider/IMG_3869.jpg">
+                <div class="carousel-caption imgSize">
+                    <h3 id="sliderHeader">IQAir Purifier Professional</h3>
                     <p>Air purifier being tested</p>
                 </div>
             </div>
@@ -157,17 +158,18 @@
     </div>
 
     <div class="container">
-        <div class="row" style="border: solid">
-            <div class="col-md-6" style="border: 10px groove lightblue">
+        <div class="row">
+            <div class="col-md-6" style="border: solid ">
                 <div id="questions"></div>
                 <script src="js/web-app.js"></script>
                 <script>airQuality();</script>
             </div>
 
-            <div class="col-md-6" style="border: 10px groove lightblue">
+            <div class="col-md-6" style="border: solid ">
                 <div id="output">
-
                 </div>
+                <script src="js/web-app.js"></script>
+                <script>airQualityImage();</script>
             </div>
         </div>
     </div>

@@ -87,6 +87,7 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\custom-header.css" />
+    <Content Include="css\image.css" />
     <Content Include="css\text.css" />
     <Content Include="disclaimer.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

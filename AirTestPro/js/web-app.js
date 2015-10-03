@@ -8,7 +8,20 @@ function airQuality() {
         var el = document.getElementById('questions');
         el.innerHTML = beginning;
     }
+
     return updateMessage();
+
+}
+
+function airQualityImage() {
+    var lateralLevel = '<a href="index.html" class="thumbnail"><img alt="Company Logo" src="img/SmallLogo.png" />'
+    function updateImage() {
+        var el = document.getElementById('output');
+        el.innerHTML = lateralLevel;
+    }
+
+    return updateImage();
+
 }
 
 /*
@@ -22,7 +35,13 @@ function airIssue(issue) {
                 var el = document.getElementById('questions');
                 el.innerHTML = nextLevel;
             }
-            return updateMessage();
+
+            var lateralLevel = '<a href="index.html" class="thumbnail"><img alt="Company Logo" src="img/SmallLogo.png" />'
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return  updateImage(), updateMessage();
         },
 
         'Pollen': function () {
