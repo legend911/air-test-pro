@@ -160,7 +160,7 @@ function airIssueDust(issue) {
         },
 
         'Bedroom': function () {
-            var nextLevel = '<h5>Where Do You See the Dust?</h5><label><input type="button" name="air-issue" value="Window" onclick="???(this.value);" />'
+            var nextLevel = '<h5>Where Do You See the Dust?</h5><label><input type="button" name="air-issue" value="Window" onclick="bedroomDust(this.value);" /></label><label><input type="button" name="air-issue" value="Dresser" onclick="bedroomDust(this.value);" /></label><label><input type="button" name="air-issue" value="Bed" onclick="bedroomDust(this.value);" /></label><label><input type="button" name="air-issue" value="Picture Frames" onclick="bedroomDust(this.value);" /></label><label><input type="button" name="air-issue" value="Lamps" onclick="bedroomDust(this.value);" /></label><label><input type="button" name="air-issue" value="Carpet" onclick="bedroomDust(this.value);" /></label><label><input type="button" name="air-issue" value="Wood Floor" onclick="bedroomDust(this.value);" /></label>'
             function updateMessage() {
                 var el = document.getElementById('questions');
                 el.innerHTML = nextLevel;
@@ -174,53 +174,9 @@ function airIssueDust(issue) {
             return updateImage(), updateMessage();
         },
 
-        'Office': function () {
-            var nextLevel = '<h5>Where Do You See the Dust?</h5><label><input type="button" name="air-issue" value="Window" onclick="???(this.value);" />'
-            function updateMessage() {
-                var el = document.getElementById('questions');
-                el.innerHTML = nextLevel;
-            }
-
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
-            function updateImage() {
-                var el = document.getElementById('output');
-                el.innerHTML = lateralLevel;
-            }
-            return updateImage(), updateMessage();
-        },
-
-        'Office': function () {
-            var nextLevel = '<h5>Where Do You See the Dust?</h5><label><input type="button" name="air-issue" value="Window" onclick="???(this.value);" />'
-            function updateMessage() {
-                var el = document.getElementById('questions');
-                el.innerHTML = nextLevel;
-            }
-
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
-            function updateImage() {
-                var el = document.getElementById('output');
-                el.innerHTML = lateralLevel;
-            }
-            return updateImage(), updateMessage();
-        },
-
-        'Baby Room': function () {
-            var nextLevel = '<h5>Where Do You See the Dust?</h5><label><input type="button" name="air-issue" value="Window" onclick="???(this.value);" />'
-            function updateMessage() {
-                var el = document.getElementById('questions');
-                el.innerHTML = nextLevel;
-            }
-
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
-            function updateImage() {
-                var el = document.getElementById('output');
-                el.innerHTML = lateralLevel;
-            }
-            return updateImage(), updateMessage();
-        },
 
         'Basement': function () {
-            var nextLevel = '<h5>Where Do You See the Dust?</h5><label><input type="button" name="air-issue" value="Window" onclick="???(this.value);" />'
+            var nextLevel = '<p>The basement is an area that is usually not well defined. It is simply a copy of the area above, but usually with less headroom and major utilities and appliances located in closed areas. Their is little air movement in the basement so when air pressure follows you downstairs all the dust travels with it and doesnt escape. Cleaning the basement of this dust is crucial especially if you use it alot. You will do your laundry down here usually and your furnace/HVAC and water heater will probably be here too. Nobody will move the furnace and water heater and a ton of dust will collect around and under these objects. You will have to take mindfully clean these. The furnace is something that actually benefits from cleaning to make it more effiecent. You should look into how to do this properly. You should move your washer and dryer and dust under there because sometimes lint will fall out of the dryer and these are objects that are not moved often. Air purifier will help in areas like these, but they are best if kept running 24/7 because of the lack if air movement.</p>'
             function updateMessage() {
                 var el = document.getElementById('questions');
                 el.innerHTML = nextLevel;
@@ -235,7 +191,7 @@ function airIssueDust(issue) {
         },
 
         'Attic': function () {
-            var nextLevel = '<h5>Where Do You See the Dust?</h5><label><input type="button" name="air-issue" value="Gable Vents" onclick="???(this.value);" />'
+            var nextLevel = '<h5>Where Do You See the Dust?</h5><label><input type="button" name="air-issue" value="Gable Vents" onclick="atticDust(this.value);" />'
             function updateMessage() {
                 var el = document.getElementById('questions');
                 el.innerHTML = nextLevel;
@@ -412,7 +368,7 @@ function diningRoomDust(issue) {
         },
 
         'Dining Table': function () {
-            var nextLevel = '<p></p><br /> <a href="index.html">Restart Web Application'
+            var nextLevel = '<p>Tables are just like any other flat surface that is within your home. The more surface area that is available the more dust will collect upon it. Keeping your table clean is a daily effort if you eat on it. If you dont use it that often then you will find yourself having to give it a quick cleanup every couple of weeks. However, the use of an mid-grade air purifier can help the situation by cleaning the area within the area, but I only find this optimal during the winter when the windows are usually closed.</p><br /> <a href="index.html">Restart Web Application'
             function updateMessage() {
                 var el = document.getElementById('questions');
                 el.innerHTML = nextLevel;
@@ -457,7 +413,7 @@ function diningRoomDust(issue) {
         },
 
         'Carpet': function () {
-            var nextLevel = '<p></p><br /> <a href="index.html">Restart Web Application'
+            var nextLevel = '<p>If you can actually seen the dust in your carpet you have a serious problem. You should be vacuuming your carpet at least once a week. The hardest part is not spreading the dust while trying to clean it, but I can show how to do that properly.</p><br /> <a href="index.html">Restart Web Application'
             function updateMessage() {
                 var el = document.getElementById('questions');
                 el.innerHTML = nextLevel;
@@ -472,7 +428,7 @@ function diningRoomDust(issue) {
         },
 
         'Wood Floor': function () {
-            var nextLevel = '<p></p><br /> <a href="index.html">Restart Web Application'
+            var nextLevel = '<p>Dust will collect on wood floors and be seen and a lot of people dont like that and put down carpet. The problem here is if you see the dust you will clean it and you will have less allergens in your home. If you have carpet you will not clean it as often and when you do it will not clean as well and it will actually be dispersed into the air making your problems worse.</p><br /> <a href="index.html">Restart Web Application'
             function updateMessage() {
                 var el = document.getElementById('questions');
                 el.innerHTML = nextLevel;
@@ -568,6 +524,110 @@ function kitchenDust(issue) {
     return (issues[issue] || issues['default'])();
 }
 
+
+
+function bedroomDust(issue) {
+    var issues = {
+        'Window': function () {
+            var nextLevel = '<h5>Has it been opened?</h5><label><input type="button" name="air-issue" value="Yes" onclick="bedrooomDustWindow(this.value);" /></label><label><input type="button" name="air-issue" value="No" onclick="bedroomDustWindow(this.value);" /></label>'
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'Bed': function () {
+            var nextLevel = '<p>Dust on your bed is a bad thing. It is going to happen if you have an irregular amount of dust in your room and it has nowhere to go. Simply using an air purifier will help with this. You dont need anything expensive or high quality for this type of issue.</p><br /> <a href="index.html">Restart Web Application'
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+
+        'Picture Frames': function () {
+            var nextLevel = '<p>The amount of dust on picture frames is usually minimal. It can tell you the difference between what is collected on the floor in comparison to the walls. These should be cleaned periodically.</p><br /> <a href="index.html">Restart Web Application'
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+
+        'Lamps': function () {
+            var nextLevel = '<p>Lamps can have a lot of dust collect on them because of the negative charge they put emit. It is similar to why the TV is always dusty. In this situation it allows the cloth lamp shade to become engrossed with dust as you have seen in many old homes.</p><br /> <a href="index.html">Restart Web Application'
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'Wood Floor': function () {
+            var nextLevel = '<p>Dust will collect on wood floors and be seen and a lot of people dont like that and put down carpet. The problem here is if you see the dust you will clean it and you will have less allergens in your home. If you have carpet you will not clean it as often and when you do it will not clean as well and it will actually be dispersed into the air making your problems worse.</p><br /> <a href="index.html">Restart Web Application'
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'Carpet': function () {
+            var nextLevel = '<p>If you can actually seen the dust in your carpet you have a serious problem. You should be vacuuming your carpet at least once a week. The hardest part is not spreading the dust while trying to clean it, but I can show how to do that properly.</p><br /> <a href="index.html">Restart Web Application'
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'default': function () {
+            return 'Default Value';
+        }
+    };
+
+    return (issues[issue] || issues['default'])();
+}
+
 /*
 Fifth Level Questions/Answers
 */
@@ -653,6 +713,47 @@ function diningRoomDustWindow(issue) {
 }
 
 function kitchenDustWindow(issue) {
+    var issues = {
+        'Yes': function () {
+            var nextLevel = '<p>80% of dust in the air is made of skin particles within a home. However, when a window is open dust can contain many different components and the natural air pressure  outside is greater than the pressure inside. This creates negative air pressure and pulls whats outside in. This is normal to see in every home when the window is open.</p> <br /> <a href="index.html">Restart Web Application</a>'
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'No': function () {
+            var nextLevel = '<p>Since the window has been mainly closed only a small amount of dust can be attributed to outside factors. People enter their home through the door all the time, but that is only a small amount as well. This dust is mainly from your own body. 80% of the dust in every home is human skin cells. Amazingly we shed skin at a fast rate. This is the same way dogs are able to track humans very easily.</p> <br /> <a href="index.html">Restart Web Application</a>'
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />'
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'default': function () {
+            return 'Default Value';
+        }
+    };
+
+    return (issues[issue] || issues['default'])();
+}
+
+
+function bedroomDustWindow(issue) {
     var issues = {
         'Yes': function () {
             var nextLevel = '<p>80% of dust in the air is made of skin particles within a home. However, when a window is open dust can contain many different components and the natural air pressure  outside is greater than the pressure inside. This creates negative air pressure and pulls whats outside in. This is normal to see in every home when the window is open.</p> <br /> <a href="index.html">Restart Web Application</a>'
