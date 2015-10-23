@@ -191,7 +191,7 @@ function airIssueDust(issue) {
         },
 
         'Attic': function () {
-            var nextLevel = '<h5>Where Do You See the Dust?</h5><label><input type="button" name="air-issue" value="Gable Vents" onclick="atticDust(this.value);" />'
+            var nextLevel = '<p></p>'
             function updateMessage() {
                 var el = document.getElementById('questions');
                 el.innerHTML = nextLevel;
