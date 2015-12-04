@@ -176,7 +176,21 @@ function unknownIssue(issue) {
         },
 
         'Flu-like Symptoms': function () {
-            return '';
+            var nextLevel = '<h5>Where do you have these symptoms?</h5>\
+                            <label><input type="button" name="air-issue" value="Kitchen" class="btn btn-primary btn-sm" onclick="unknownIssueFlulikeSymptoms(this.value);" /></label>\
+                            <label><input type="button" name="air-issue" value="Basement" class="btn btn-info btn-sm" onclick="unknownIssueFlulikeSymptoms(this.value);" /></label>\
+                            <label><input type="button" name="air-issue" value="Attic" class="btn btn-primary btn-sm" onclick="unknownIssueFlulikeSymptoms(this.value);" /></label>';
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="index.html" class="thumbnail"><img alt="Company Logo" src="img/SmallLogo.png" />';
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
         },
 
         'Bad Smells': function () {
@@ -772,6 +786,86 @@ function unknownIssueAllergySymptoms(issue) {
                             the situation and state their may be an issue that is causing people in the workplace to be sick. Most businesses want their \
                             employees to be as healthy as possible so they can work well. They should be more than happy to have this looked at by the \
                             maintenance crew to get a clue into what you have found.</p> \
+                            <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'default': function () {
+            return 'Default Value';
+        }
+    };
+
+    return (issues[issue] || issues['default'])();
+}
+
+
+
+function unknownIssueFlulikeSymptoms(issue) {
+    var issues = {
+        'Basement': function () {
+            var nextLevel = '<p>If you feel like you are getting sick in certain parts of your home or just somewhere in your home in general this \
+                            is a big warning sign that you have a mold issue created by water damage. In your basement you will want to check your \
+                            walls and floor for water damage of any kind. If you have a finished basement, I would suggest that you go to the part \
+                            of the wall that is on the high side of the “grade” of the yard. If the grade of your yard doesnt route water properly \
+                            around your home water will hit your foundation and will find a crack to get inside or make one over time. If you are \
+                            wearing proper N95 rated air filter masks then you can cut a small hole into the drywall and check if mold is visible. \
+                            Once you have confirmed this it is time to call a professional mold remediation specialists.</p> \
+                            <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'Kitchen': function () {
+            var nextLevel = '<p>If you feel like you are getting sick in certain parts of your home or just somewhere in your home in general this \
+                            is a big warning sign that you have a mold issue created by water damage. Your kitchen is full of water sources and \
+                            chances for mold to grow is near infinite. The most common way for this to happen is leaking pipe connections. It \
+                            could be your sink, garbage disposal, or the dishwasher. You should check these fittings if you suspect that your \
+                            issue is within this area of your house. Another issue you might find is the water spilling on the countertop will \
+                            hit the wall and disappear. If this collect somewhere mold will have a chance to grow secretly. Once you have confirmed \
+                            this is the issue it is time to call a professional mold remediation specialists.</p> \
+                            <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'Attic': function () {
+            var nextLevel = '<p>If you feel like you are getting sick in certain parts of your home or just somewhere in your home in general \
+                            this is a big warning sign that you have a mold issue created by water damage. Not many people go into their attic \
+                            unless it is a living area or they are storing stuff up there. As you know many roofs go well past their expiration \
+                            dates and people do not realize it. Slowly water will find its way through the roof and allow your insulation get wet. \
+                            This is all you need to do to create a great environment for mold growth. If you do disturb this area the mold will \
+                            spread throughout the attic maybe find its way down into your living areas through a HVAC system or unknown holes. \
+                            When you purchase your home always check the date of your roof and allow about 20 years before you roofer look at it \
+                            again.</p> \
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
