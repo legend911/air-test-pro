@@ -6,8 +6,6 @@ function airQuality() {
     var beginning = '<h5>What Issues or Symptoms are you having?</h5>\
                     <label><input type="button" name="air-issue" value="Allergy Symptoms" class="btn btn-info btn-sm" onclick="unknownIssue(this.value);" /></label>\
                     <label><input type="button" name="air-issue" value="Flu-like Symptoms" class="btn btn-primary btn-sm" onclick="unknownIssue(this.value);" /></label>\
-                    <label><input type="button" name="air-issue" value="Bad Smells" class="btn btn-info btn-sm" onclick="unknownIssue(this.value);" /></label>\
-                    <label><input type="button" name="air-issue" value="Hard Time Breathing" class="btn btn-primary btn-sm" onclick="unknownIssue(this.value);" /></label>\
                     <label><input type="button" name="air-issue" value="Dust" class="btn btn-info btn-sm" onclick="airIssue(this.value);" /></label>\
                     <label><input type="button" name="air-issue" value="Pollen" class="btn btn-primary btn-sm" onclick="airIssue(this.value);" /></label>\
                     <label><input type="button" name="air-issue" value="Mold" class="btn btn-info btn-sm" onclick="airIssue(this.value);" /></label>\
@@ -101,7 +99,30 @@ function airIssue(issue) {
         },
 
         'Bacteria/Viruses': function () {
-            return '';
+            var nextLevel = '<p>Knowing that you have bacteria within your home and viruses that may be contracted from people visiting or just from \
+                            going outside can be a tough pill to swallow. You may find yourself doing just that to feel better after one of these \
+                            organisms finds itself inside your body. I will say that the best way to battle such things is through proper knowledge \
+                            and process. You should have a clean house and surfaces at all times. Food of all sorts can become potential breading \
+                            grounds for just about anything. You have to make sure everybody is sanitary within your home especially if you are \
+                            being weakened by an illness. Ask everyone to help you by following these simple rules. Dealing with viruses is a very \
+                            tough subject. They can travel from person to person, on clothing, pets or they could just be sitting on an object just \
+                            waiting to hitch a ride before they become inert. The previous steps will help with many of these issues for if a sick \
+                            person comes in your home you will need extra help. I suggest that you use a particular set of air purifiers that use \
+                            new technologies such as Ultraviolet light to destroy viruses. Many hospitals have these systems now when it can be \
+                            afforded to them. They can prevent illnesses that are airborne from traveling through the hospital. This same technology \
+                            can help you within your home.</p> \
+                            <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="index.html" class="thumbnail"><img alt="Company Logo" src="img/SmallLogo.png" />';
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
         },
 
         'Hazardous Volatile Organic Compounts (VOCs)': function () {
@@ -141,7 +162,20 @@ function airIssue(issue) {
         },
 
         'Smog': function () {
-            return '';
+            var nextLevel = '<h5>Where is the smog?</h5>\
+                            <label><input type="button" name="air-issue" value="Work" class="btn btn-info btn-sm" onclick="airIssueSmog(this.value);" /></label>\
+                            <label><input type="button" name="air-issue" value="Home" class="btn btn-primary btn-sm" onclick="airIssueSmog(this.value);" /></label>';
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="index.html" class="thumbnail"><img alt="Company Logo" src="img/SmallLogo.png" />';
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
         },
 
         'default': function () {
@@ -191,14 +225,6 @@ function unknownIssue(issue) {
                 el.innerHTML = lateralLevel;
             }
             return updateImage(), updateMessage();
-        },
-
-        'Bad Smells': function () {
-            return '';
-        },
-
-        'Hard Time Breathing': function () {
-            return '';
         },
 
         'default': function () {
@@ -357,12 +383,12 @@ function airIssueDust(issue) {
 function airIssuePollen(issue) {
     var issues = {
         'Living Room': function () {
-            var nextLevel = 'Your main living area can easily be filled with the yearly attack of the spring and summer pollen. Honestly, \
+            var nextLevel = '<p>Your main living area can easily be filled with the yearly attack of the spring and summer pollen. Honestly, \
                             nobody can escape this fact. If you have your windows open then the pollen will naturally come in and settle on \
                             all surfaces. Your best bet is to keep the windows closed and have an air purifier running that can capture any \
                             pollen that comes in through the door. Also if you have great airflow through your house you can let the pollen \
                             flow in one window and out the next. However, some pollen will become trapped in corners of the house that dont \
-                            allow air to flow freely.\
+                            allow air to flow freely.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -379,13 +405,13 @@ function airIssuePollen(issue) {
         },
 
         'Dining Room': function () {
-            var nextLevel = 'Pollen in the dining room can be a nuisance just like other areas of your home. Many people like to keep their \
+            var nextLevel = '<p>Pollen in the dining room can be a nuisance just like other areas of your home. Many people like to keep their \
                             dining table and china cabinet clean. Your best bet is to keep the windows closed and have an air purifier running \
                             that can capture any pollen that comes in through the door. Also if you have great airflow through your house you \
                             can let the pollen flow in one window and out the next. You will have to do some minor dusting if you keep your \
                             window open at a minimum. I am not suggesting that an air purifier can solve your problems because it cant a \
                             really strong pollen count can overwhelm an air purifier easily and it wont be able to keep up the pace if the \
-                            windows are wide open.\
+                            windows are wide open.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -401,12 +427,12 @@ function airIssuePollen(issue) {
         },
 
         'Bedroom': function () {
-            var nextLevel = 'If your bed is covered in the yellow dust of pollen then you have a serious problem. You will be sleeping in this \
+            var nextLevel = '<p>If your bed is covered in the yellow dust of pollen then you have a serious problem. You will be sleeping in this \
                             bed for around 8 hours every night. When you pull the covers over the pollen is reintroduced into the air and then \
                             you breathe it right in and that will usually be enough to turn your allergies on. You will wake up with runny nose, \
                             swollen eyes and all the other symptoms. You could also have pollen on and inside of your dresser. Nobody wants their \
                             clothes covered in pollen because that will do the exact same thing. An air purifier in your bedroom is mandatory in \
-                            my opinion and can help out this situation and several others.\
+                            my opinion and can help out this situation and several others.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -422,10 +448,10 @@ function airIssuePollen(issue) {
         },
 
         'Baby Room': function () {
-            var nextLevel = 'The apple of your eye needs protection from pollen as well. You will always try to guard your child from all the \
+            var nextLevel = '<p>The apple of your eye needs protection from pollen as well. You will always try to guard your child from all the \
                             bad things in the world, but pollen is very persistent. Using a high quality air purifier is key to cleaning their \
                             air and giving you piece of mind. This will also help with other issues that you will find in their rooms (off-gasing, \
-                            dust, bad smells).\
+                            dust, bad smells).</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -454,13 +480,13 @@ function airIssuePollen(issue) {
 function airIssueMold(issue) {
     var issues = {
         'Basement': function () {
-            var nextLevel = 'Finding mold in your basement is a very bad sign. Most people cant even find mold, they just believe there is mold because of an odd smell and \
+            var nextLevel = '<p>Finding mold in your basement is a very bad sign. Most people cant even find mold, they just believe there is mold because of an odd smell and \
                             they are probably right if they have evidence of water damage. Many people have basements where they simply arent well suited. Some parts of the \
                             world have high “water tables” and when the water table is high enough to hit your house the water will win and will find a way inside because \
                             concrete is actually porous. I believe it is porous for just that reason. If you get a flood water will seep through it and leave your home and \
                             if stream hits your home it wont end up “moving” your home and breaking your foundation. I suggest that you wear a mask with a N95 rated filter \
                             and do a little investigative work on the water damage. You want to find the root cause before you bother replacing a rug or a single piece of \
-                            drywall just to have it happen again.\
+                            drywall just to have it happen again.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -477,13 +503,13 @@ function airIssueMold(issue) {
         },
 
         'Attic': function () {
-            var nextLevel = 'Water damage or humidity in your attic can provide a great place for mold growth. You could see this if you have a bad roof, ice dams, improper \
+            var nextLevel = '<p>Water damage or humidity in your attic can provide a great place for mold growth. You could see this if you have a bad roof, ice dams, improper \
                             level of insulation, improper airflow and no bathroom ventilation. You will have to go up into your attic yourself to figure out what the issue is. \
                             Fortunately, there are several things you can do to figure out these issues. Check for a breeze, check the temperature, make sure your bathroom fans \
                             vent to the outside of the house and make sure your insulation “R rating” is right for your climate zone. If your roof tiles are bad you will have leaks. \
                             If your airflow is bad then heat will gather in your roof and melt snow that will go backwards under the tiles and end up in the attic. If your bathroom \
                             fans dont have a hose that goes to the outside of the house then the moisture from the shower will be trapped in the attic. Situations like these you can \
-                            avoid because mold can go unnoticed in many attics.\
+                            avoid because mold can go unnoticed in many attics.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -499,11 +525,11 @@ function airIssueMold(issue) {
         },
 
         'Kitchen': function () {
-            var nextLevel = 'Finding mold in your kitchen can be a sign of many possible problems, but the most important thing to realize is you have water damage. The water may \
+            var nextLevel = '<p>Finding mold in your kitchen can be a sign of many possible problems, but the most important thing to realize is you have water damage. The water may \
                             not be a one time thing. A small leak in a sink, dishwasher, refrigerator ice maker, coffee machine, etc... several water sources can be found in your \
                             kitchen and that doesnt even count the water pipes in the walls. If you found the mold you can start to tell where the water is coming from or originated \
                             from. Make sure you use a N95 filtered mask when you do this. You will be disturbing the mold and it will go airborne again. Keep small children and older \
-                            adults away from the area when you do this. Once you find the problem see if you can fix it yourself or if you need to call a professional.\
+                            adults away from the area when you do this. Once you find the problem see if you can fix it yourself or if you need to call a professional.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -531,10 +557,10 @@ function airIssueMold(issue) {
 function airIssueVOC(issue) {
     var issues = {
         'Formaldehyde': function () {
-            var nextLevel = 'This particular compound, which is well known with the term “off-gasing” is a big problem for many people that dont understand why it is so strong. \
+            var nextLevel = '<p>This particular compound, which is well known with the term “off-gasing” is a big problem for many people that dont understand why it is so strong. \
                             Many new materials like carpets, cabinets, foam mattresses, etc... will have a significant amount of off-gasing that needs to occur after they are \
                             unwrapped. The finishing products make an incredible smell that needs to air out of your home. The worst part is having this in the middle of the winter \
-                            when you dont want to open your windows....., but you will have too.\
+                            when you dont want to open your windows....., but you will have too.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -551,11 +577,11 @@ function airIssueVOC(issue) {
         },
 
         'Paint': function () {
-            var nextLevel = 'Everybody knows that when you spray paint that you should use a mask because the molecules that you could breathe in are toxic. However, when people \
+            var nextLevel = '<p>Everybody knows that when you spray paint that you should use a mask because the molecules that you could breathe in are toxic. However, when people \
                             are painting by hand nobody wears anything. It is something people can forget about when they think about paint. The storage of paint is something else \
                             that people dont think about. Even when paint is sealed small amounts of VOCs are released over time and they can have a significant effect in a small area. \
                             If you do have to store paint in your home keep it as far away from living areas as possible. Also make sure that you have firmly closed them and it would \
-                            even be better if you were able to wrap them in a sealed bag.\
+                            even be better if you were able to wrap them in a sealed bag.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -571,11 +597,11 @@ function airIssueVOC(issue) {
         },
 
         'Cleaning Products': function () {
-            var nextLevel = 'Cleaning materials are made of all kinds of bad things most of the time. Their are some good “green” companies available now, but for the most part a \
+            var nextLevel = '<p>Cleaning materials are made of all kinds of bad things most of the time. Their are some good “green” companies available now, but for the most part a \
                             lot of these products are toxic. Many people are allergic to the smell or just dont like the smell of them. When you use them the smell takes a while to \
                             leave, but when you store them you really arent sealing them closed. You probably store them under your kitchen and bathroom sink and in your basement if \
                             you have one. When it is in your sink you will have a slow leak of VOCs and people that are susceptible to that will have issues that they will have a hard \
-                            time tracking down. If you find your issues are stronger when you are in these areas then you may be susceptible to hazardous VOCs. \
+                            time tracking down. If you find your issues are stronger when you are in these areas then you may be susceptible to hazardous VOCs.</p> \
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -603,13 +629,13 @@ function airIssueVOC(issue) {
 function airIssueSmoke(issue) {
     var issues = {
         'Smoking': function () {
-            var nextLevel = 'If you are a smoker or live with a smoker then you will need to take extra measures to make sure as little of the smell enters or stays in the \
+            var nextLevel = '<p>If you are a smoker or live with a smoker then you will need to take extra measures to make sure as little of the smell enters or stays in the \
                             house. The best way to reduce smoke smell is to smoke outside of the house in clothing that doesnt absorb these smells (wool). Of course in the \
                             summer it is hard to not wear cotton, which will absorb this smell easily. If a person if smoking in your home then their really isnt much you \
                             can do. You can buy an air purifier that concentrates on removing smells, but it will cost you a lot of money because these air filters fill up \
                             quick when absorbing smells. I personally think you should smoke outside if you have this issue and it will reduce it enough to make it bearable \
                             for people without any major health issues. If somebody has COPD or lung disease in your home then no harmful smells should be inside the house \
-                            and they should be using a top quality air purification device.\
+                            and they should be using a top quality air purification device.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -626,10 +652,10 @@ function airIssueSmoke(issue) {
         },
 
         'Fire Damage': function () {
-            var nextLevel = 'One of the first things you should do when you have fire damage is call a restoration crew and if the damage is bad a structural engineer. A \
+            var nextLevel = '<p>One of the first things you should do when you have fire damage is call a restoration crew and if the damage is bad a structural engineer. A \
                             restoration crew will have powerful ionic air purifiers that will release negative ions (ozone) that will attach themselves to the smoke particles \
                             and then drop to the ground. This will remove the smoke smell from the area. If there is a lot of damage then you should call a structural engineer \
-                            to make sure the structure is stable.\
+                            to make sure the structure is stable.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -645,13 +671,13 @@ function airIssueSmoke(issue) {
         },
 
         'Chimney': function () {
-            var nextLevel = 'Smoke from the chimney is something that many people know is possible, but is largely ignored because its an open fireplace. Heat is supposed to \
+            var nextLevel = '<p>Smoke from the chimney is something that many people know is possible, but is largely ignored because its an open fireplace. Heat is supposed to \
                             felt in the immediate area, but you shouldnt be filling your home full of smoke. The flue is supposed to suck of this smoke and allow it to exit the \
                             home safely. If you have logs that have a lot of loose bark it is more likely for cinders to pop off the fire and land on the floor (This could cause \
                             a fire). If this happens enough smoke can become captured by your home. Also if your chimney isnt properly sealed smoke may not properly exit the home \
                             and reenter the walls before it reaches the top of the chimney. You can stop cinders from escaping by using a gate and having a large stone surface \
                             for them to land on. If your chimney is failing you will need to contact a professional to see if it can be patched or if you need to tear down and \
-                            rebuild your fireplace.\
+                            rebuild your fireplace.</p>\
                             <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
             function updateMessage() {
                 var el = document.getElementById('questions');
@@ -674,6 +700,64 @@ function airIssueSmoke(issue) {
     return (issues[issue] || issues['default'])();
 }
 
+
+
+function airIssueSmog(issue) {
+    var issues = {
+        'Work': function () {
+            var nextLevel = '<p>Issues at work are something that you will have to make an ethical decision about. Only you know your company and what they are willing to do \
+                            for their employees and if they generally follow the rules set by the government regulations organization. You should be able to go to your boss or \
+                            your companys health official and discuss a possible health related issue that is caused by something within the building. It is mutually beneficial \
+                            for them to do this so nobody else gets sick and uses their health plans and take days off or worse the health board comes in and shuts things down \
+                            while issues are fixed. Smog is an environmental issue brought on by uncontrolled waste and byproducts going into the sky and then being trapped by \
+                            "inversion", which is the same thing that keeps fog close to the ground. Many big cities have issues with this because of several types of pollution \
+                            made by man that then goes into the atmoshere and react with light and create another type of pollution. This will then come right back down on the \
+                            population and make breathing and seeing a hard thing to do. Lastly, if your workplace will not do anything then you will have to take precautions \
+                            like they do in parts of China and where protective masks while you harmful areas.</p>\
+                            <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'Home': function () {
+            var nextLevel = '<p>A couple years ago I received an email from a concerned woman in India who had a possible smog issue within her home. She was seeing smog easily \
+                            seeping into her home and making it hard for her elderly father to breathe because of his lung issues. Before I recommended any actions to take I wanted \
+                            to get a full grasp of the situation. I found that not only were their days of bad smog, but they also lived next to garbarge site that burned trash \
+                            daily. I then told her that the number one priority was to either move far away from the garbage site or work on sealing up the house (windows, doors, etc..) \
+                            while also supplementing with high quality air purification in areas of the home where her father would be most of the time. I will always look at the \
+                            root cause and provide the best option first. Not everybody can just up and move away from issues. Weathersealing the home helped alot and the air purifier \
+                            did a great job of cleaning the air and helping her father breathe a little easier.</p>\
+                            <br /> <label><input type="button" name="restart" value="Restart Application" class="btn btn-success btn-sm" onclick="airQuality();" /></label>';
+            function updateMessage() {
+                var el = document.getElementById('questions');
+                el.innerHTML = nextLevel;
+            }
+
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            function updateImage() {
+                var el = document.getElementById('output');
+                el.innerHTML = lateralLevel;
+            }
+            return updateImage(), updateMessage();
+        },
+
+        'default': function () {
+            return 'Default Value';
+        }
+    };
+
+    return (issues[issue] || issues['default'])();
+}
 
 
 function unknownIssueAllergySymptoms(issue) {
