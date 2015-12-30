@@ -53,7 +53,7 @@ function airIssue(issue) {
                 el.innerHTML = nextLevel;
             }
 
-            var lateralLevel = '<a href="index.html" class="thumbnail"><img alt="Company Logo" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="index.html" class="thumbnail"><img alt="Dust on a tv" src="img/tv-dust.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -90,7 +90,7 @@ function airIssue(issue) {
                 el.innerHTML = nextLevel;
             }
 
-            var lateralLevel = '<a href="index.html" class="thumbnail"><img alt="Company Logo" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="index.html" class="thumbnail"><img alt="Water Damage" src="img/water-damage1.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -257,7 +257,7 @@ function airIssueDust(issue) {
             }
             
         
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Living Room" src="img/living-room.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -278,7 +278,7 @@ function airIssueDust(issue) {
                 el.innerHTML = nextLevel;
             }
         
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Dining Room" src="img/dining-room.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -297,7 +297,7 @@ function airIssueDust(issue) {
                 el.innerHTML = nextLevel;
             }
         
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Kitchen" src="img/kitchen.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -342,7 +342,7 @@ function airIssueDust(issue) {
                 el.innerHTML = nextLevel;
             }
 
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Furnace in the basement" src="img/basement-furnace.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -987,7 +987,7 @@ function livingRoomDust(issue) {
                 el.innerHTML = nextLevel;
             }
 
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Living Room" src="img/living-room.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -1005,7 +1005,7 @@ function livingRoomDust(issue) {
                 el.innerHTML = nextLevel;
             }
 
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/living-room.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -1022,7 +1022,7 @@ function livingRoomDust(issue) {
                 el.innerHTML = nextLevel;
             }
 
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Dust on the TV" src="img/tv-dust.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -1094,7 +1094,7 @@ function livingRoomDust(issue) {
                 el.innerHTML = nextLevel;
             }
 
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Wood Floors" src="img/living-room.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -1159,7 +1159,7 @@ function diningRoomDust(issue) {
                 el.innerHTML = nextLevel;
             }
 
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Dining Room" src="img/dining-room.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
@@ -1288,7 +1288,7 @@ function kitchenDust(issue) {
                 el.innerHTML = nextLevel;
             }
 
-            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Indoor Air Quality Test" src="img/SmallLogo.png" />';
+            var lateralLevel = '<a href="airpurifierreviews.html" class="thumbnail"><img alt="Kitchen" src="img/kitchen.jpg" />';
             function updateImage() {
                 var el = document.getElementById('output');
                 el.innerHTML = lateralLevel;
