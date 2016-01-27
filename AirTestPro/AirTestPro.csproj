@@ -92,6 +92,7 @@
     <Content Include="css\text.css" />
     <Content Include="disclaimer.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="hepafilter.html" />
     <Content Include="img\IMG_3866.JPG" />
     <Content Include="img\IMG_3869.JPG" />
     <Content Include="img\IMG_3871.JPG" />
