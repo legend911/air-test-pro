@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aboutus.html" />
+    <Content Include="activatedcarbon.html" />
     <Content Include="airpurifierreviews.html" />
     <Content Include="bin\AirTestPro.dll" />
     <Content Include="bin\AirTestPro.pdb" />
