@@ -93,6 +93,7 @@
     <Content Include="css\text.css" />
     <Content Include="disclaimer.html" />
     <Content Include="electrostaticfilter.html" />
+    <Content Include="electrostaticprecipitators.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="hepafilter.html" />
     <Content Include="img\IMG_3866.JPG" />
