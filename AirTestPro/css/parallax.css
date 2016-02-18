@@ -117,3 +117,23 @@
     top: 50%;
     margin-top: -50px;
 }
+
+.parallax-antibacterialfilter {
+    position: relative;
+    height: 500px;
+    background-image: url(/img/parallax-antibacterialfilter.jpg);
+    position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.parallax-logo-antibacterialfilter {
+    height: 100px;
+    width: 100%;
+    background-image: url(/img/parallax-antibacterialfilter-logo-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;    
+    top: 50%;
+    margin-top: -50px;
+}
