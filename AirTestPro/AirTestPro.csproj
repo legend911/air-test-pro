@@ -133,6 +133,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="obj\Debug\AirTestPro.csprojResolveAssemblyReference.cache" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="photocatalyticoxidation.html" />
     <Content Include="privacy.html" />
     <Content Include="Scripts\jquery-2.1.3.min.map" />
     <None Include="Web.Debug.config">
