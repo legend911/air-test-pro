@@ -11,7 +11,7 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
 
 try
 {
-    $emailText = "You have new message from contact form\n=============================\n";
+    $emailText = "You have new message from the Business Validation form\n=============================\n";
 
     foreach ($_POST as $key => $value) {
 
