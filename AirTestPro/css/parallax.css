@@ -1,6 +1,6 @@
 ﻿.parallax-truehepafilter {
     position: relative;
-    height: 500px;
+    height: 250px;
     background-image: url(/img/parallax-truehepafilter.jpg);
     position: center;
     background-attachment: fixed;
@@ -154,6 +154,17 @@
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;    
+    top: 50%;
+    margin-top: -50px;
+}
+
+.parallax-logo-validation {
+    height: 100px;
+    width: 100%;
+    background-image: url(/img/parallax-logo-validation.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
     top: 50%;
     margin-top: -50px;
 }

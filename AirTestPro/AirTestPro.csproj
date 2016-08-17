@@ -119,6 +119,7 @@
     <Content Include="ionicfilter.html" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\contact.js" />
     <Content Include="js\npm.js" />
     <Content Include="js\web-app.js" />
     <Content Include="moldtest.html" />
@@ -159,6 +160,7 @@
     <Content Include="template.html" />
     <Content Include="truehepafilter.html" />
     <Content Include="uvfilter.html" />
+    <Content Include="validation.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
