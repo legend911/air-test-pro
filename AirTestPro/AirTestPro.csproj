@@ -86,6 +86,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="ceilingfantest.html" />
     <Content Include="cleanairtechnology.html" />
+    <Content Include="contact.php" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
@@ -94,6 +95,7 @@
     <Content Include="css\image.css" />
     <Content Include="css\parallax.css" />
     <Content Include="css\text.css" />
+    <Content Include="css\validation.css" />
     <Content Include="disclaimer.html" />
     <Content Include="doairpurifierswork.html" />
     <Content Include="electrostaticfilter.html" />
@@ -160,7 +162,7 @@
     <Content Include="template.html" />
     <Content Include="truehepafilter.html" />
     <Content Include="uvfilter.html" />
-    <Content Include="validation.html" />
+    <Content Include="validation1.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
